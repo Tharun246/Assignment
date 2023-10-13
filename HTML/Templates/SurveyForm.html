@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="../styles/survey.css">
+  <script src="../styles/survey.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Customer Survey Form</h1>
+    <form id="surveyForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName"  data-label="First name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" data-label="Last Name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" data-label="Date of Birth" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" required>
+          <option value="">Select Country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Male" data-label="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="profession">Profession</label>
+        <input type="text" id="profession" data-label="Profession" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email"  data-label="Email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" required data-label="Mobile">
+      </div>
+      
+      <button type="submit" class="submit-button">Submit</button>
+      <button type="reset" class="reset-button">Reset</button>
+    </form>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="submittedData"></div>
+        </div>
+      </div>
+  </div>
+  
+</body>
+</html>
